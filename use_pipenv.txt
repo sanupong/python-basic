@@ -1,0 +1,7 @@
+https://pypi.org/project/pipenv/
+
+Step 1 : install pip env -> pip install pipenv
+Step 2 : pipenv shell (after run has pipfile folder contain for config. You can modify config)
+Step 3 : pipenv install another library or run 
+Exit : cmd exit
+Install Specific Version such ass numpy : pipenv install numpy==v1.20.0

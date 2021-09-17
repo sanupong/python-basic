@@ -1,0 +1,33 @@
+https://fastapi.tiangolo.com/
+install -> pip3 install fastapi
+        -> pip3 install uvicorn  #Simulation Server
+
+step 1 : Write code to main.py (copy sample code to main.py file)
+#code
+
+from typing import Optional
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Optional[str] = None):
+    return {"item_id": item_id, "q": q}
+
+#End Code
+
+step 2 : run code : uvicorn main:app --reload
+step 3 : Check it http://127.0.0.1:8000/items/5?q=somequery
+step 4 : Interactive API Docs http://127.0.0.1:8000/docs
+step 5 : Alternative API docs  http://127.0.0.1:8000/redoc
+
+
+run uvicorn : uvicorn main:app --reload
+http://localhost:8000

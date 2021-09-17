@@ -1,0 +1,7 @@
+Step 1 pipenv shell
+Step 2 pipenv install pydantic
+Step 3 Code -> from pydantic import BaseModel
+
+Add+
+pip3 install python-dotenv
+
